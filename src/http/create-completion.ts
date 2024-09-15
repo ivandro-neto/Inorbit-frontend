@@ -1,9 +1,9 @@
-export async function CreateCompletion(goalId:string) {
-  await fetch("http://localhost:3333/completions",{
+export async function CreateCompletion(goalId: string) {
+  await fetch("https://inorbit-backend-56f6.onrender.com/completions", {
     method: "POST",
     headers: {
-      "content-type" : "application/json"
+      "content-type": "application/json",
     },
-    body: JSON.stringify({goalId})
-  })
+    body: JSON.stringify({ goalId }),
+  });
 }

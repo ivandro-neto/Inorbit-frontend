@@ -12,7 +12,9 @@ type SummaryResponse = {
 };
 
 export const getSummary = async (): Promise<SummaryResponse> => {
-  const response = await fetch("http://localhost:3333/summary");
+  const response = await fetch(
+    "https://inorbit-backend-56f6.onrender.com/summary",
+  );
   const data = await response.json();
   return data;
-}
+};
