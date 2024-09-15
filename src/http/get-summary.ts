@@ -16,5 +16,6 @@ export const getSummary = async (): Promise<SummaryResponse> => {
     "https://inorbit-backend-56f6.onrender.com/summary",
   );
   const data = await response.json();
+  console.log(data)
   return data;
 };

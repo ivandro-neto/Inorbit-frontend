@@ -59,7 +59,7 @@ export function Summary() {
         <div className="flex gap-6 flex-col">
           <h2 className="text-xl font-medium">Sua semana</h2>
 
-          {Object.entries(data.goalsPerDay).map(([date, goals]) => {
+          {data.goalsPerDay && Object.entries(data.goalsPerDay).map(([date, goals]) => {
             const dayWeek = dayjs(date).format("dddd")
             const dayMonth = dayjs(date).format("D MMMM")
             return (
